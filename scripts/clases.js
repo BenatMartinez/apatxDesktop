@@ -1,3 +1,4 @@
+require( 'datatables.net-dt' )();
 
 
 fetch(apiUrl+'clase')
@@ -5,7 +6,7 @@ fetch(apiUrl+'clase')
     .then(data => {
         // use the retrieved data here
         console.log(data);
-        $('#myTable').DataTable({
+        $('#clasesTable').DataTable({
             data: data,
             "columns": [
                 { "data": "nombre" },
@@ -14,14 +15,16 @@ fetch(apiUrl+'clase')
                 { "data": "createdAt" },
                 { "data": "updatedAt" },
                 ],
-            paging: false, 
             responsive: true,
             info: false,
+            scrollY: '800px',
+            scrollCollapse: true,
+
             language: { search: "" },
             "createdRow": function( row, data, dataIndex){           
                 $(row).click(function(event) {
                     
-                    });
+                });
             }
         });
     })
