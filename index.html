@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script> window.jQuery = window.$ = require('jquery'); </script>
+    <link href="packages/DataTables/datatables.min.css" rel="stylesheet"/>
+    <script src="packages/DataTables/datatables.min.js"></script>
+</head>
+<body>
+<section class="main-app">
+<nav class="navbar bg-info bg-danger" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">
+          Irun Desktop
+        </a>
+    </div>
+</nav>
+<div class="container main-container" style="max-width: 100%;">
+    <div class="row main-row">
+        <div class="col-xl-2 col-1 container-left vertical-menu">
+            <a href="#" class="active itemMenu">Home</a>
+            <a href="#" class="itemMenu">Clases</a>
+        </div>
+        <div class="col-xl-10 col-11 container-right overflow-y-auto">
+        </div>
+    </div>
+</div>   
+</section>
+
+    
+    
+    <script src="render.js"></script>
+
+</body>
+</html>

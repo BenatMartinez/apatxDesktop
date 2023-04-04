@@ -1,0 +1,73 @@
+html, body {
+    height: 100%;
+}
+body{
+    overflow-y: hidden; /* Hide vertical scrollbar */
+}
+.main-app{
+    height: 100%;
+}
+.main-container{
+    height: 100%;
+}
+.main-row{
+    min-height: 100%;
+}
+.container-left{
+    background-color: #E8E8E8;
+    padding-top: 20px;
+    height: auto !important;
+    min-height: 100%;
+}
+.container-right{
+    padding-top: 20px;
+    background-color: #F0F0F0;
+    
+}
+
+li {
+    list-style:none;
+}
+li:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+span.textTitulo {
+    margin-left: 20px;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+
+ .vertical-menu a {
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+  }
+  
+  .vertical-menu a.active {
+    background-color: #04AA6D; /* Add a green color to the "active/current" link */
+    color: white;
+  }
+
+
+ @media (max-width: 1200px) {
+    .textTitulo {
+        display: none;
+      }
+  }
+
+
+    
