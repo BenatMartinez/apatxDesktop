@@ -33,15 +33,6 @@ $(document).ready( function () {
         });
         });
     
-    fetch(apiUrl+'clase/6426c98e61f60cccaf12e18d')
-        .then(response => response.text())
-        .then(data => {
-            console.log(data)
-        })
-        .catch(error => {
-            // handle any errors here
-            console.error(error);
-        });
 
 } );
 
